@@ -38,13 +38,21 @@ function Counter(){
         setCount(0);
     };
     return(
-        <div>
+        <div style={{textAlign:"center", marginTop:"50px"}}>
             <h1>React Counter App</h1>
             <h2>{count}</h2>
-            <button onClick={increase}>Increase</button>
-            <button onClick={decrease}>Decrease</button>
-            <button onClick={reset}>Reset</button>
+            <button onClick={increase} style={btnStyle}>Increase</button>
+            <button onClick={decrease} style={btnStyle}>Decrease</button>
+            <button onClick={reset} btnStyle={btnStyle}>Reset</button>
         </div>
     );
 }
+
+    const btnStyle = {
+        padding: "10px 20px",
+        margin: "10px",
+        fontsize: "16px",
+        cursor: "pointer"
+    }
+
 export default Counter;
