@@ -5,11 +5,12 @@ import './index.css'
 import Greeting from './Greeting.jsx'
 import User from './User.jsx'
 import App1 from './App1.jsx'
+import Counter from './Counter.jsx'
 // import App from './App.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-   <App />
+   <Counter />
 
   </StrictMode>,
 )
