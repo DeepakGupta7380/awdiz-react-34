@@ -7,11 +7,12 @@ import User from './User.jsx'
 import App1 from './App1.jsx'
 import Counter from './Counter.jsx'
 import CounterApp from './CounterApp.jsx'
+import Users from './Users.jsx'
 // import App from './App.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-   <CounterApp />
+   <Users />
 
   </StrictMode>,
 )
