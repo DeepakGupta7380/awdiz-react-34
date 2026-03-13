@@ -11,9 +11,12 @@ import Users from './Users.jsx'
 import Msg from './Msg.jsx'
 // import App from './App.jsx'
 
+import Assignment from './Assignment.jsx'
+
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-  <Msg />
+  <Assignment />
 
   </StrictMode>,
 )
