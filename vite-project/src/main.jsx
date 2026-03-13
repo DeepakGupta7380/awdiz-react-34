@@ -12,11 +12,12 @@ import Msg from './Msg.jsx'
 // import App from './App.jsx'
 
 import Assignment from './Assignment.jsx'
+import Simplelogin from './Simplelogin.jsx'
 
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-  <Assignment />
+ <Simplelogin />
 
   </StrictMode>,
 )
