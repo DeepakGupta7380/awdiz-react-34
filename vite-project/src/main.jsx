@@ -13,13 +13,13 @@ import './index.css'
 
 // import Assignment from './Assignment.jsx'
 // import Simplelogin from './Simplelogin.jsx'
- import App2 from './App2.jsx'
+ import App from './App.jsx'
 // import ProductCard from './ProductCard.jsx'
 
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App2/>
+    <App/>
 
   </StrictMode>,
 )
