@@ -26,9 +26,9 @@ function Simplelogin() {
     }
 
 
-    function clearName() {
-        setName("");
-    }
+    // function clearName() {
+    //     setName("");
+    // }
 
 
     return (
@@ -63,10 +63,10 @@ function Simplelogin() {
                 <br />
 
                 <button type="submit">
-                    Login
+                    Login {name}, {email}, {password} 
                 </button>
 
-                <button onClick={clearName}>Clear Name</button>
+                {/* <button onClick={clearName}>Clear Name</button> */}
             </form>
         </div>
     );
