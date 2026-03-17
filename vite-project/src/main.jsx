@@ -14,12 +14,17 @@ import './index.css'
 // import Assignment from './Assignment.jsx'
 // import Simplelogin from './Simplelogin.jsx'
  import App from './App.jsx'
+import App3 from './App3.jsx'
 // import ProductCard from './ProductCard.jsx'
+import { BrowserRouter } from 'react-router-dom'
+import Simple from './Simple.jsx'
 
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App/>
+    <BrowserRouter>
+    <Simple/>
+    </BrowserRouter>
 
   </StrictMode>,
 )
