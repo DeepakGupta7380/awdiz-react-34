@@ -18,12 +18,13 @@ import App3 from './App3.jsx'
 // import ProductCard from './ProductCard.jsx'
 import { BrowserRouter } from 'react-router-dom'
 import Simple from './Simple.jsx'
+import Intro from './Intro.jsx'
 
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
-    <Simple/>
+    <Intro/>
     </BrowserRouter>
 
   </StrictMode>,
