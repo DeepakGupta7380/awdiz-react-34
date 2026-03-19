@@ -19,12 +19,13 @@ import App3 from './App3.jsx'
 import { BrowserRouter } from 'react-router-dom'
 import Simple from './Simple.jsx'
 import Intro from './Intro.jsx'
+import Recon from './Recon.jsx'
 
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
-    <Intro/>
+    <App/>
     </BrowserRouter>
 
   </StrictMode>,
