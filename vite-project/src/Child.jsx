@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { UserContext } from "./Contact";
+import { UserContext } from "./ThemeContext";
 
 function Child(){
     const user = useContext(UserContext);

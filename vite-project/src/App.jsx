@@ -1,39 +1,19 @@
-// import React from "react";
-// import Navbar from "./componentX/Navbar";
-// import Product from "./componentX/Product";
-// import Footer from "./componentX/Footer";
-
-// function App(){
-
-// return(
-
-// <div>
-
-// <Navbar/>
-
-// <Product/>
-
-// <Footer/>
-
-// </div>
-
-// )
-
-// }
-
-// export default App;
-
-import React from 'react';
-import { UserContext } from './Contact';
-import Child from "./Child";
+import React, { useState } from "react";
+// import { ThemeContext } from "./ThemeContext";
+import { ThemeContext } from "./ThemeContext";
+import Home from "./Home";
 
 function App(){
-    const user = "Deepak";
+    const [theme, setTheme] = useState("light");
 
+    const toggleTheme = () => {
+        setTheme(theme === "light" ? "dark" : "light");
+    };
     return(
-        <UserContext.Provider value={user}>
-            <Child />
-        </UserContext.Provider>
+        <ThemeContext.Provider value={{ theme, toggleTheme }}>
+            <Home />
+        </ThemeContext.Provider>
     );
 }
+
 export default App;
