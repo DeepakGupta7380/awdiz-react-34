@@ -20,12 +20,13 @@ import { BrowserRouter } from 'react-router-dom'
 import Simple from './Simple.jsx'
 import Intro from './Intro.jsx'
 import Recon from './Recon.jsx'
+import A from './A.jsx'
 
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
-    <App/>
+    <A/>
     </BrowserRouter>
 
   </StrictMode>,
