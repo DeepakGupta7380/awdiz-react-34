@@ -1,19 +1,21 @@
 import React, { useState } from "react";
-// import { ThemeContext } from "./ThemeContext";
-import { ThemeContext } from "./ThemeContext";
-import Home from "./Home";
+
+const Child = React.memo(() => {
+    console.log("Child Rendered");
+
+    return <h2>Child Component</h2>;
+});
 
 function App(){
-    const [theme, setTheme] = useState("light");
+    const [count, setCount] = useState(0);
 
-    const toggleTheme = () => {
-        setTheme(theme === "light" ? "dark" : "light");
-    };
     return(
-        <ThemeContext.Provider value={{ theme, toggleTheme }}>
-            <Home />
-        </ThemeContext.Provider>
+        <div>
+            <button onClick={() => setCount(count + 1)}>
+                Count: {count}
+            </button>
+            <Child/>
+        </div>
     );
 }
-
 export default App;
