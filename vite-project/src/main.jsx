@@ -13,21 +13,22 @@ import './index.css'
 
 // import Assignment from './Assignment.jsx'
 // import Simplelogin from './Simplelogin.jsx'
- import App from './App.jsx'
-import App3 from './App3.jsx'
+//  import App from './App.jsx'
+// import App3 from './App3.jsx'
 // import ProductCard from './ProductCard.jsx'
 import { BrowserRouter } from 'react-router-dom'
-import Simple from './Simple.jsx'
-import Intro from './Intro.jsx'
-import Recon from './Recon.jsx'
-import A from './A.jsx'
+// import Simple from './Simple.jsx'
+// import Intro from './Intro.jsx'
+// import Recon from './Recon.jsx'
+// import A from './A.jsx'
+import B from './B.jsx'
 
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter>
-    <A/>
-    </BrowserRouter>
+    {/* <BrowserRouter> */}
+    <B/>
+    {/* </BrowserRouter> */}
 
   </StrictMode>,
 )
