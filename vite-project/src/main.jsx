@@ -28,6 +28,8 @@ import { BrowserRouter } from 'react-router-dom'
 // import Homes from './Homes.jsx'
 import Use from './App6.jsx'
 import App6 from './App6.jsx'
+import App7 from './App7.jsx'
+
 
 
 createRoot(document.getElementById('root')).render(
