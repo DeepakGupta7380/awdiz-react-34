@@ -23,14 +23,18 @@ import { BrowserRouter } from 'react-router-dom'
 // import A from './A.jsx'
 // import B from './B.jsx'
 // import App from './App.jsx'
-import App4 from './App4.jsx'
+// import App4 from './App4.jsx'
+// import App5 from './App5.jsx'
+// import Homes from './Homes.jsx'
+import Use from './App6.jsx'
+import App6 from './App6.jsx'
 
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    {/* <BrowserRouter> */}
-    <App4/>
-    {/* </BrowserRouter> */}
+    <BrowserRouter>
+      <App6 />
+    </BrowserRouter>
 
   </StrictMode>,
 )
