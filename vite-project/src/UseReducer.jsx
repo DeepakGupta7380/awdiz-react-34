@@ -1,21 +1,37 @@
 import React, { useReducer } from "react";
 
-function reducer(state, action) {
-  switch (action.type) {
-    case "increment":
-      return { count: state.count + 1 };
+// function reducer(state, action) {
+//   switch (action.type) {
+//     case "increment":
+//       return { count: state.count + 1 };
 
-    case "decrement":
-      return { count: state.count - 1 };
+//     case "decrement":
+//       return { count: state.count - 1 };
 
-    case "reset":
-      return { count: 0 };
+//     case "reset":
+//       return { count: 0 };
 
-    default:
-      return state;
-  }
+//     default:
+//       return state;
+//   }
+// }
+
+function reducer(state, action){
+    if (action.type === "increment"){
+        return { count: state.count + 1 };
+    }
+
+    else if(action.type === "decrement"){
+        return { count: state.count - 1 };
+    }
+
+    else if ( action.type === "reset"){
+        return { count: 0 };
+    }
+    else{ 
+        return state;
+    }
 }
-
 function UseReducer(){
     const [state, dispatch] = useReducer(reducer, {count: 0 });
 
