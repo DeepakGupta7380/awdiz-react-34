@@ -16,8 +16,11 @@ import './index.css'
 //  import App from './App.jsx'
 // import App3 from './App3.jsx'
 // import ProductCard from './ProductCard.jsx'
-import { BrowserRouter } from 'react-router-dom'
-import UseReducer from './useReducer'
+// import { BrowserRouter } from 'react-router-dom'
+// import UseReducer from './useReducer'
+import App8 from './App8'
+// import { Provider } from "react-redux";
+// import { store } from './redux/Store';
 // import Simple from './Simple.jsx'
 // import Intro from './Intro.jsx'
 // import Recon from './Recon.jsx'
@@ -33,12 +36,11 @@ import UseReducer from './useReducer'
 
 
 
-
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter>
-      <UseReducer />
-    </BrowserRouter>
 
-  </StrictMode>,
-)
+
+
+    <App8 />
+    </StrictMode>,
+);
